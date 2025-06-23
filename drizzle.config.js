@@ -1,8 +1,8 @@
-import { ENV } from "./src/config/env.js";
+import { ENV } from "./api/config/env.js";
 
 export default {
-  schema: "./src/db/schema.js",
-  out: "./src/db/migrations",
+  schema: "./api/db/schema.js",
+  out: "./api/db/migrations",
   dialect: "postgresql",
   dbCredentials: { url: ENV.DATABASE_URL },
 };
